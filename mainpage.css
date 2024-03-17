@@ -12,9 +12,13 @@ html {
 #sidebar button {
 	margin-top: 20;
 	height: 7%;
+	padding: 15;
+	border-radius: 10px;
+	border-style: none;
 }
 #sidebar button a {
 	color: #000000;
+	text-decoration: none;
 }
 #sidebar h3 {
 	color: #D9D9D9;
@@ -50,6 +54,7 @@ html {
 #news ul li {
 	background-color: white;
 	margin-top: 10;
+	border-radius: 10px;
 }
 #news ul li a {
 	color: #000000;
