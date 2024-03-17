@@ -1,0 +1,60 @@
+html {
+	background-color: #4CAA4B;
+}
+
+
+#sidebar {
+	float: left;
+	width: 15%;
+	background-color: #4CAA4B;
+	height: 100%;
+}
+#sidebar button {
+	margin-top: 20;
+	height: 7%;
+}
+#sidebar button a {
+	color: #000000;
+}
+#sidebar h3 {
+	color: #D9D9D9;
+}
+#buttons1 {
+	margin-bottom: 40;
+}
+
+
+#description {
+	float: right;
+	width: 85%;
+	background-color: #D9D9D9;
+	text-align: center;
+}
+#description h2 {
+	background-color: white;
+	margin-left: 5;
+	margin-right: 5;
+}
+
+
+#news {
+	float: right;
+	width: 85%;
+	background-color: #D9D9D9;
+	text-align: center;
+}
+#news ul {
+	list-style-type: none;
+}
+
+#news ul li {
+	background-color: white;
+	margin-top: 10;
+}
+#news ul li a {
+	color: #000000;
+}
+
+#news footer {
+	background-color: white;
+}
