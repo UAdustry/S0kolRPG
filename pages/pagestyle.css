@@ -69,15 +69,17 @@ html {
 }
 
 #rules ul {
+	background-color: #D9D9D9;
 	list-style-type: none;
 }
 
 #rules ul li {
-	background-color: #D9D9D9;
+	background-color: white;
 }
 
 #rules li h3 {
 	margin-top: 5;
+	background-color: white;
 }
 
 #rules ul li h4 {
