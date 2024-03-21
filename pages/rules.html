@@ -25,52 +25,108 @@
 						<h3>Правило 1 не бьемся палками</h3>
 						<h4>Наказание: медній бік</h4>
 					</li> -->
+					<h2>Основные правила</h2>
+					<button id="mainrulesbutton" onclick="mainRulesFunc()">Свернуть</button>
+					<div id="mainrules">
+					<br>
 					<li>
-						<h3>1. Надо вести себя адекватно (не прибегать к вандализму, не орать)</h3>
+						<h3>Надо вести себя адекватно (не прибегать к вандализму, не орать)</h3>
 						<h4>Наказание: решается собранием</h4>
 					</li>
 					<li>
-						<h3>2. Необходимо придерживаться правил рп и игровых правил </h3>
+						<h3>Необходимо придерживаться правил рп и игровых правил </h3>
 						<h4>Наказание: решается собранием</h4>
 					</li>
+					</div>
+
+					<h2>Игровые правила</h2>
+					<button id="gamerulesbutton" onclick="gameRulesFunc()">Свернуть</button>
+					<div id="gamerules">
 					<li>
-						<h3>3. Весь урон и здоровье игроков обсчитывается согласно боевой системе </h3>
+						<h3>Весь урон и здоровье игроков обсчитывается согласно боевой системе </h3>
 						<h4>Наказание: конфискация палки, либо в тяжелых случаях решается собранием</h4>
 					</li>
 					<li>
-						<h3>4. Запрещено наносить удары палкой по голове, ногам, кистям рук</h3>
+						<h3>Запрещено наносить удары палкой по голове, ногам, кистям рук</h3>
 						<h4>Наказание: от конфискации палки, до казни или изгнания из рпг</h4>
 					</li>
 					<li>
-						<h3>5. Запрещено использование палок в дальнем бою, камни разрешены только в дальнем бою при размере <1 см3 и только по баллистической траектории, использование земли и песка в бою запрещено</h3>
+						<h3>Запрещено использование палок в дальнем бою, камни разрешены только в дальнем бою при размере <1 см3 и только по баллистической траектории, использование земли и песка в бою запрещено</h3>
 						<h4>Наказание: от конфискации палки, до казни или изгнания из рпг</h4>
 					</li>
 					<li>
-						<h3>6. Удары палок не должны причинять боль</h3>
+						<h3>Удары палок не должны причинять боль</h3>
 						<h4>Наказание: от конфискации палки, до казни или изгнания из рпг</h4>
 					</li>
 					<li>
-						<h3>7. Запрещен подкуп членов общего собрания </h3>
+						<h3>Запрещен подкуп членов общего собрания </h3>
 						<h4>Наказание: изгнание из рпг</h4>
 					</li>
 					<li>
-						<h3>8. Запрещено использование способностей, не соответствующих расе персонажа</h3>
+						<h3>Запрещено использование способностей, не соответствующих расе персонажа</h3>
 						<h4>Наказание: от казни до изгнания</h4>
 					</li>
 					<li>
-						<h3>9. Перейдя в нон-рп вы не можете пойти в рп в течении 20 минут</h3>
+						<h3>Перейдя в нон-рп вы не можете пойти в рп в течении 20 минут</h3>
 						<h4>Наказание: от казни до изгнания</h4>
 					</li>
+					</div>
+
+					<h2>РП-правила</h2>
+					<button id="rprulesbutton" onclick="rpRulesFunc()">Свернуть</button>
+					<div id="rprules">
 					<li>
-						<h3>10. Старайтесь избегать матов, в вашем речи желательно побольше архаизмов.</h3>
+						<h3>Старайтесь избегать матов, в вашем речи желательно побольше архаизмов.</h3>
 					</li>
 					<li>
-						<h3>11. Старайтесь отыгрывать свою расу в диалогах и действиях согласно интеллекту и силе
+						<h3>Старайтесь отыгрывать свою расу в диалогах и действиях согласно интеллекту и силе
 						</h3>
 					</li>
+					</div>
 				</ul>
 			</div>
 </head>
 <body>
+	<script>
+		// rules show / hide
+		const mainRules = document.getElementById("mainrules");
+		const gameRules = document.getElementById("gamerules");
+		const rpRules = document.getElementById("rprules");
+		const mainRulesButton = document.getElementById("mainrulesbutton");
+		const gameRulesButton = document.getElementById("gamerulesbutton");
+		const rpRulesButton = document.getElementById("rprulesbutton");
+
+		mainRules.style.display = "block";
+		gameRules.style.display = "block";
+		rpRules.style.display = "block";
+
+		var mainRulesFunc = function () {
+			if (mainRules.style.display == "block") {
+				mainRules.style.display = "none";
+				mainRulesButton.innerText = "Развернуть";
+			} else {
+				mainRules.style.display = "block";
+				mainRulesButton.innerText = "Cвернуть";
+			}
+		};
+		var gameRulesFunc = function () {
+			if (gameRules.style.display == "block") {
+				gameRules.style.display = "none";
+				gameRulesButton.innerText = "Развернуть";
+			} else {
+				gameRules.style.display = "block";
+				gameRulesButton.innerText = "Cвернуть";
+			}
+		};
+		var rpRulesFunc = function () {
+			if (rpRules.style.display == "block") {
+				rpRules.style.display = "none";
+				rpRulesButton.innerText = "Развернуть";
+			} else {
+				rpRules.style.display = "block";
+				rpRulesButton.innerText = "Cвернуть";
+			}
+		};
+	</script>
 </body>
 </html>

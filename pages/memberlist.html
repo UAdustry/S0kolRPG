@@ -18,6 +18,14 @@
 				<button type="button"><a href="race.html">Расы</a></button><br>
 				<button type="button"><a href="changelog.html">Список изменений</a></button><br>
 			</div>
+			<div id="namechooser">
+				<h2>Выбор имени</h2>
+				<p id="namep">Выбор имени для персонажа - важная задача, ведь вас будут так звать. Я советую выбирать в качестве имени архаичную версию своего имени (к примеру, Иван - Иоанн). Не можете подобрать имя персонажу? Получите имя по кнопке ниже:</p>
+				<button id="bothchoose" onclick="displayBoth()">Получить имя и фамилию</a></button>
+				<button id="namechoose" onclick="displayName()">Получить только имя</a></button>
+				<button id="surnamechoose" onclick="displaySurname()">Получить только фамилию</a></button><br>
+				<button id="namehide" onclick="chooserHide()">Скрыть</a></button>
+			</div>
 			<div id="memberlist">
 				<table>
 			<tr>
@@ -43,5 +51,68 @@
 		</div>
 	<head>
 	<body>
+		<script>
+			var bothChoose = document.getElementById("bothchoose");
+			var nameChoose = document.getElementById("namechoose");
+			var surnameChoose = document.getElementById("surnamechoose");
+			var nameP = document.getElementById("namep");
+			var nameHide = document.getElementById("namehide");
+
+			bothChoose.style.display = "block";
+			nameChoose.style.display = "block";
+			surnameChoose.style.display = "block";
+
+			var names = [
+				"Мушилат",
+				"Мехрем",
+				"Албив",
+				"Амран",
+				"Икрам",
+				"Миспран",
+				"Ячмыл",
+				"Ахтыр"
+			];
+
+			var surnames = [
+				"ыфтырмеков",
+				"Доласемев",
+				"Масвалов",
+				"Выкваров",
+				"Свячцдох",
+				"Калымтаев"
+			];
+
+			var displayBoth = function () {
+				var name = names[Math.floor(Math.random() * names.length)];
+				var surname = surnames[Math.floor(Math.random() * surnames.length)];
+				alert("Имя: " + name +". Фамилия: " + surname)
+			};
+
+			var displayName = function () {
+				var name = names[Math.floor(Math.random() * names.length)];
+				alert("Имя: " + name)
+			};
+
+			var displaySurname = function () {
+				var surname = surnames[Math.floor(Math.random() * surnames.length)];
+				alert("Фамилия: " + surname)
+			};
+
+			var chooserHide = function () {
+				if (bothChoose.style.display == "block") {
+					bothChoose.style.display = "none";
+					nameChoose.style.display = "none";
+					surnameChoose.style.display = "none";
+					nameP.style.display = "none";
+					nameHide.innerText = "Показать";
+				} else if (bothChoose.style.display == "none") {
+					bothChoose.style.display = "block";
+					nameChoose.style.display = "block";
+					surnameChoose.style.display = "block";
+					nameP.style.display = "block";
+					nameHide.innerText = "Скрыть";
+				} 
+			}
+		</script>
 	</body>
 </html>
