@@ -179,13 +179,18 @@ html {
 #gallery #galleryleft {
 	float: left;
 	width: 45%;
+	background-color: #D9D9D9;
+	padding: 15;
 }
-
 
 #gallery #galleryright {
 	float: right;
 	width: 45%;
+	background-color: #D9D9D9;
+	padding: 15;
 }
+
+
 
 #races { 
 	float: right;
