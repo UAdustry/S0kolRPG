@@ -62,6 +62,8 @@ html {
 
 #news ul h2 {
 	background-color: white;	
+	width: 80%;
+	padding: 2;
 }
 
 #news li {
@@ -101,6 +103,13 @@ html {
 	border-radius: 10px;
 	border-style: none;
 	background-color: white;
+}
+
+#rules ul button:hover {
+	background-color: #D9D9D9;
+}
+#rules ul button:active {
+	background-color: #6e7080;
 }
 
 #rules ul h2 {
@@ -269,6 +278,7 @@ html {
 
 #lore ul li {
 	margin-top: 5;
+	text-decoration: none;
 }
 
  #lore ul li a {

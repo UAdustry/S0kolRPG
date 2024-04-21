@@ -8,6 +8,8 @@ html {
 	width: 15%;
 	background-color: #4CAA4B;
 	height: 100%;
+	position: fixed;
+ 	overflow: auto;
 }
 #sidebar button {
 	margin-top: 20;
@@ -20,7 +22,7 @@ html {
 #sidebar button a {
 	color: #000000;
 	text-decoration: none;
-	
+	display: block;	
 }
 #sidebar button:hover {
 	background-color: #D9D9D9;
@@ -74,4 +76,9 @@ html {
 
 #news footer {
 	background-color: white;
+	padding: 3;
+}
+
+#news footer img {
+	justify-content: center;
 }
