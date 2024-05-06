@@ -19,21 +19,24 @@ html {
 	border-style: none;
 	transition-duration: 0.4s;
 }
+
 #sidebar button a {
 	color: #000000;
 	text-decoration: none;
-	display: block;	
+	
 }
+
 #sidebar button:hover {
 	background-color: #D9D9D9;
 }
+
 #sidebar button:active {
 	background-color: #6e7080;
 }
 
 
 #sidebar h3 {
-	color: #D9D9D9;
+	color: white;
 }
 #buttons1 {
 	margin-bottom: 40;

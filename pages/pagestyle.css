@@ -8,6 +8,8 @@ html {
 	width: 15%;
 	background-color: #4CAA4B;
 	height: 100%;
+	position: fixed;
+ 	overflow: auto;
 }
 #sidebar button {
 	margin-top: 20;
